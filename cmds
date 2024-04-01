@@ -1,0 +1,24 @@
+# to execute a zookeeper server 
+----- in kafka dir----  bin/zookeeper-server-start.sh config/zookeeper.properties
+
+# to execute a kafka server 
+----- in kafka dir ---- bin/kafka-server-start.sh config/server.properties
+
+# to start a redis server 
+ ------- anywhare------------ sudo systemctl start redis
+-------- to check status----sudo systemctl status redis
+-------cli connect port 6380---redis-cli
+------ to open redish ----RedisInsight
+
+#to run the producer file  
+-------python3 "/home/jayasurya/Documents/stream_process/producer_kafka.py"
+
+#to run the consumer file 
+------ python3 "/home/jayasurya/Documents/stream_process/consumer_kafka.py"
+
+#########to see the streamed data in the database ####### JAYASURYA ##########
+
+# to stop redis server 
+ --------  sudo systemctl stop redis
+---------  redis-cli shutdown
+
